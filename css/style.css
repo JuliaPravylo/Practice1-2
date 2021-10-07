@@ -1,0 +1,522 @@
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Alef&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700;900&display=swap");
+
+@font-face {
+    font-family: "Helvetica Neue Condensed Black";
+    src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue-CondensedBlack.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeue.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ------------------------------------------------------- */
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+    padding: 50px;
+}
+/* ------------------------------ */
+
+.wrapper{
+    background-color:rgb(189, 183, 107);
+}
+
+.tasks{
+    background-color:rgb(85, 107, 47)
+    ;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tasks-btn{
+    background-color:darkorange;
+    max-width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px firebrick;
+    font-size: 20px;
+    margin: 15px;
+}
+
+
+.task-desine{
+    background-color: rgb(255, 140, 0);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+/* ------------------- */
+.main-block{
+    padding: 0px 0px 170px 0px; 
+    /* Якщо прибрати цей padding нижній контент стрибає вверх */
+    /* padding для main-block задається всередині wrapper*/
+}
+
+.block{
+    background-color:rgb(255, 255, 255);
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 100px 87px 0px 87px;
+    border: 3px solid darkred; 
+    /* ?Без border мінусовий марджин в img не працює. Картинка розміщується в div.block */
+}
+
+.top-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 0px 0px 28px 0px;
+	background: url("../img/Overline_Mark.svg") 0 0 no-repeat;
+	padding: 0px 0px 0px 30px;
+}
+
+.line{
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    color: rgb(2, 19, 60);
+    max-width: 583px;
+    margin: 0px 0px 33px 0px;
+}
+
+.content{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgb(75, 75, 75);
+    margin: 0px 0px 52px 0px;
+}
+
+.auto{
+    margin: 0 0px -120px 0px;
+    max-width: 100%;
+}
+
+.block-serv{
+    width: 324px;
+    height: 340px;
+    background-color:rgb(255, 255, 255);
+    margin: 30px;
+}
+
+h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    color: rgb(2, 19, 60);
+}
+
+.mini-auto{
+    margin: 50px 130px 33px 131px;
+}
+
+.card{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: rgb(75, 75, 75);
+    width: 235px;
+    height: 99px;
+    margin: 20px 46px 49px 43px;
+}
+
+/* --------- */
+
+.part-two{
+    background-color:rgb(255, 255, 255);
+    width: 1039px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 30px;
+}
+
+.mini-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 30px;
+}
+
+.xs-title{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 30px;
+}
+
+p, ul{
+    margin: 30px;
+}
+
+.teza{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+/* ------------ */
+
+.part-three{
+    background-color:rgb(255, 255, 255);
+    width: 500px;
+}
+
+.star{
+    margin: 137px 250px 18px 30px;
+}
+
+.title-star{
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 465px;
+    height: 116px;
+    margin: 18px 30px;
+}
+
+.content-star{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 436px;
+    height: 207px;
+    margin: 18px 30px;
+}
+
+/* -------------- */
+
+.task-three{
+    background-color:rgb(255, 255, 255);
+    max-width: 540px;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.title-cutspace{
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.800000011920929px;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    max-width: 374px;
+    margin: 20px auto;
+}
+
+.paragraph{
+    max-width: 374px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    color: rgb(50, 50, 50);
+    margin: 20px auto;
+}
+
+.cutspace-bottom{
+    max-width: 374px;
+    margin: 40px auto 20px auto;
+}
+/* ------------ */
+.task-th{
+    background-color:rgb(255, 255, 255);
+    max-width: 540px;
+    /* padding: 25px; */
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    /* Без border у верхнього і нижнього ел-та margin випадає за рамки блока */
+}
+
+.icon{
+    margin: 40px auto 15px auto;
+    max-width: 70px;
+}
+
+
+.seller-title{
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0.800000011920929px;
+    text-align: center;
+    max-width: 125px;
+    margin: 0 auto;
+}
+
+.seller-text{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.149999976158142px;
+    text-align: center;
+    max-width: 364px;
+    margin: 0 auto 25px auto;
+}
+
+.seller-bottom{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #F78434;
+    max-width: 172px;
+    margin: 25px auto;
+}
+
+.image-girls{
+    margin: 0 0 31px 0;
+}
+/* ------------------- */
+.task-girls{
+    max-width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+}
+
+.text-girls{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.149999976158142px;
+    text-align: left;
+    margin: 0 29px 0 29px;
+}
+
+.name{
+    font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0.6000000238418579px;
+text-align: left;
+margin: 23px 218px 1px 29px;
+}
+
+.from{
+    font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 1.149999976158142px;
+text-align: left;
+color: #58BEBF;
+margin: 1px 230px 31px 29px;
+}
+/* ------------------------ */
+
+.how-often{
+    max-width: 255px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    /* Без border у верхнього і нижнього ел-та margin випадає за рамки блока */
+}
+.how-often-title{
+    font-family: "Helvetica Neue";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2750000059604645px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    max-width: 207px;
+    margin: 24px;
+}
+
+.rectangle{
+    margin: 24px;
+    width: 56px;
+    height: 2px;
+    background: #34C759;
+    /* При копіюванні з фігми як картинки цього прямокутника, в браузері додається відступ */
+}
+
+.how-often-text{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.16249999403953552px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 24px 24px 60px 24px;
+    max-width: 207px;
+}
+/* --------------------- */
+
+.meal{
+    max-width: 350px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 30px auto;
+    border: 1px solid transparent;
+    /* Без border у верхнього і нижнього ел-та margin випадає за рамки блока */
+}
+.meal-title{
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #D9D9D9;
+    margin-top: 29px;
+    margin-left: 30px;
+}
+.meal-minititle{
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.15000000596046448px;
+    text-align: left;
+    color: #A4A8B2;
+    margin-left: 30px;
+}
+.meal-text{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.16249999403953552px;
+    text-align: left;
+    color: #85878C;
+    max-width: 290px;
+    margin: 30px;
+}
+.stars-img{
+    margin-top: 30px;
+    margin: 30px;
+    display: inline-block;
+    word-spacing: 41px;
+}
+
+.order-button-img{
+    display: inline-block;
+    margin-top: 24px;
+}
